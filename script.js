@@ -1,9 +1,14 @@
 document.getElementById("hamburguer_menu").onclick = function(){
-    document.getElementById("wrapper_menu").classList.toggle("openMenu") ; 
+    document.getElementById("side_bar").classList.toggle("openMenu") ; 
     document.getElementById("linha1").classList.toggle("openMenu");
     document.getElementById("linha2").classList.toggle("openMenu");
     document.getElementById("linha3").classList.toggle("openMenu");
-    document.getElementById("mainImg").classList.toggle("openMenu");
+    document.getElementById("side_bar").classList.toggle("resizedMobileMenu");
+    document.getElementById("linha1").classList.toggle("resizedMobileMenu");
+    document.getElementById("linha2").classList.toggle("resizedMobileMenu");
+    document.getElementById("linha3").classList.toggle("resizedMobileMenu");
+
+    
 }
 
 var aboutUs_object = {
@@ -70,3 +75,5 @@ document.getElementById("participe_btn").onclick = function(){
     this.classList.toggle("subscribe") ; 
     
 }
+
+
