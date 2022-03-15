@@ -67,5 +67,6 @@ setInterval(function(){
 document.getElementById("participe_btn").onclick = function(){
 
     document.getElementById("formulario").classList.toggle("subscribe");
+    this.classList.toggle("subscribe") ; 
     
 }
