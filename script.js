@@ -35,3 +35,37 @@ for(var i=0; i<single_tabs.length; i++){
         
     }
 }
+
+let btn = document.getElementById("submit_btn");
+
+window.setInterval(function(){
+
+
+    setTimeout(function(){
+        btn_resize();
+    },1000)
+
+
+    btn.style["transform"] = "scale(1.1)";
+
+
+},2000)
+
+function btn_resize(){
+    btn.style["transform"] = "scale(1)";
+}
+
+setInterval(function(){
+
+    setTimeout(function(){
+        console.log("1sec")
+    },1000);
+
+    console.log("5sec");
+},5000);
+
+document.getElementById("participe_btn").onclick = function(){
+
+    document.getElementById("formulario").classList.toggle("subscribe");
+    
+}

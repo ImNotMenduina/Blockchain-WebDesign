@@ -290,9 +290,8 @@ body{
     margin-top: 10px;
     position: relative;
     background-color:rgba(46, 45, 45, 0.6);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden;
+   
+    
 
 
 }
@@ -304,6 +303,8 @@ body{
 
     width:40%;
     left:60px;
+
+    transition:opacity 1s;
     
 }
 
@@ -342,7 +343,7 @@ body{
 #participe_btn{
     display: block;
     margin:auto;
-
+    color:white;
 
     padding:10px;
     border:none;
@@ -357,7 +358,7 @@ body{
     background: #36D1DC; 
     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
     background: linear-gradient(to right, #5B86E5, #36D1DC); 
-
+   
     
     cursor: pointer;
 
@@ -462,5 +463,77 @@ body{
         background-position: top;
     }
 }
+
+
+/* =========parte do formulario=========== */
+
+#formulario{
+    display:none;
+}
+
+#formulario.subscribe{
+    display: block;
+
+}
+
+#cadastro{
+    box-sizing: border-box;
+    
+    position:relative;
+    padding:30px;
+    
+
+    width:100%;
+    text-align: center;
+    background-color:rgba(46, 45, 45, 0.6);
+
+   
+   transition: all 1s;
+
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+
+}
+
+input{
+    
+    width: 80%;
+    padding:10px;
+    border:none;
+    margin-bottom:20px;
+
+    border-radius: 10px;
+
+    color:white;
+    
+    
+}
+input:focus{
+   
+   outline: none;
+   border-bottom: 2px solid rgb(255, 0, 0);
+   color:white;
+   
+}
+
+#submit_btn{
+    width: 100%;
+    border:none;
+    color:white;
+    padding:10px;
+
+    background: #36D1DC; 
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+    background: linear-gradient(to right, #5B86E5, #36D1DC); 
+
+    border-radius: 10px;
+
+    transition:transform 1s;
+
+}
+#submit_btn:hover{
+    cursor:pointer;
+}
+
 
 
